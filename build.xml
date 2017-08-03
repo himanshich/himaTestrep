@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. --><project basedir="." default="build" name="Day1">
+    <property environment="env"/>
+    <property name="ECLIPSE_HOME" value="../../Selenium/selenium E books/INSTALLATION FILES/Selenium-ECLIPSE LUNA_64BIT/eclipse-jee-luna-_64 BIT/eclipse-64BIT/"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.7"/>
+    <property name="source" value="1.7"/>
+    <path id="Maven Dependencies.libraryclasspath">
+        <pathelement location="C:/Users/sarah/.m2/repository/org/seleniumhq/selenium/selenium-java/3.4.0/selenium-java-3.4.0.jar"/>
+        <pathelement location="C:/Users/sarah/.m2/repository/org/seleniumhq/selenium/selenium-api/3.4.0/selenium-api-3.4.0.jar"/>
+        <pathelement location="C:/Users/sarah/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.4.0/selenium-edge-driver-3.4.0.jar"/>
+        <pathelement location="C:/Users/sarah/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.4.0/selenium-opera-driver-3.4.0.jar"/>
+        <pathelement location="C:/Users/sarah/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.4.0/selenium-remote-driver-3.4.0.jar"/>
+        <pathelement location="C:/Users/sarah/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.4.0/selenium-safari-driver-3.4.0.jar"/>
+        <pathelement location="C:/Users/sarah/.m2/repository/org/seleniumhq/selenium/selenium-support/3.4.0/selenium-support-3.4.0.jar"/>
+        <pathelement location="C:/Users/sarah/.m2/repository/cglib/cglib-nodep/3.2.4/cglib-nodep-3.2.4.jar"/>
+        <pathelement location="C:/Users/sarah/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar"/>
+        <pathelement location="C:/Users/sarah/.m2/repository/org/apache/commons/commons-lang3/3.5/commons-lang3-3.5.jar"/>
+        <pathelement location="C:/Users/sarah/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar"/>
+        <pathelement location="C:/Users/sarah/.m2/repository/commons-io/commons-io/2.5/commons-io-2.5.jar"/>
+        <pathelement location="C:/Users/sarah/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar"/>
+        <pathelement location="C:/Users/sarah/.m2/repository/org/w3c/css/sac/1.3/sac-1.3.jar"/>
+        <pathelement location="C:/Users/sarah/.m2/repository/net/sourceforge/cssparser/cssparser/0.9.22/cssparser-0.9.22.jar"/>
+        <pathelement location="C:/Users/sarah/.m2/repository/com/google/code/gson/gson/2.8.0/gson-2.8.0.jar"/>
+        <pathelement location="C:/Users/sarah/.m2/repository/com/google/guava/guava/21.0/guava-21.0.jar"/>
+        <pathelement location="C:/Users/sarah/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar"/>
+        <pathelement location="C:/Users/sarah/.m2/repository/net/sourceforge/htmlunit/htmlunit/2.26/htmlunit-2.26.jar"/>
+        <pathelement location="C:/Users/sarah/.m2/repository/net/sourceforge/htmlunit/htmlunit-core-js/2.26/htmlunit-core-js-2.26.jar"/>
+        <pathelement location="C:/Users/sarah/.m2/repository/net/sourceforge/htmlunit/neko-htmlunit/2.25/neko-htmlunit-2.25.jar"/>
+        <pathelement location="C:/Users/sarah/.m2/repository/org/apache/httpcomponents/httpclient/4.5.3/httpclient-4.5.3.jar"/>
+        <pathelement location="C:/Users/sarah/.m2/repository/org/apache/httpcomponents/httpcore/4.4.6/httpcore-4.4.6.jar"/>
+        <pathelement location="C:/Users/sarah/.m2/repository/org/apache/httpcomponents/httpmime/4.5.3/httpmime-4.5.3.jar"/>
+        <pathelement location="C:/Users/sarah/.m2/repository/org/eclipse/jetty/jetty-io/9.4.1.v20170120/jetty-io-9.4.1.v20170120.jar"/>
+        <pathelement location="C:/Users/sarah/.m2/repository/org/eclipse/jetty/jetty-util/9.4.1.v20170120/jetty-util-9.4.1.v20170120.jar"/>
+        <pathelement location="C:/Users/sarah/.m2/repository/net/java/dev/jna/jna/4.1.0/jna-4.1.0.jar"/>
+        <pathelement location="C:/Users/sarah/.m2/repository/net/java/dev/jna/jna-platform/4.1.0/jna-platform-4.1.0.jar"/>
+        <pathelement location="C:/Users/sarah/.m2/repository/junit/junit/4.12/junit-4.12.jar"/>
+        <pathelement location="C:/Users/sarah/.m2/repository/com/codeborne/phantomjsdriver/1.4.0/phantomjsdriver-1.4.0.jar"/>
+        <pathelement location="C:/Users/sarah/.m2/repository/org/seleniumhq/selenium/htmlunit-driver/2.26/htmlunit-driver-2.26.jar"/>
+        <pathelement location="C:/Users/sarah/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar"/>
+        <pathelement location="C:/Users/sarah/.m2/repository/org/eclipse/jetty/websocket/websocket-api/9.4.3.v20170317/websocket-api-9.4.3.v20170317.jar"/>
+        <pathelement location="C:/Users/sarah/.m2/repository/org/eclipse/jetty/websocket/websocket-client/9.4.3.v20170317/websocket-client-9.4.3.v20170317.jar"/>
+        <pathelement location="C:/Users/sarah/.m2/repository/org/eclipse/jetty/jetty-client/9.4.3.v20170317/jetty-client-9.4.3.v20170317.jar"/>
+        <pathelement location="C:/Users/sarah/.m2/repository/org/eclipse/jetty/jetty-http/9.4.3.v20170317/jetty-http-9.4.3.v20170317.jar"/>
+        <pathelement location="C:/Users/sarah/.m2/repository/org/eclipse/jetty/websocket/websocket-common/9.4.3.v20170317/websocket-common-9.4.3.v20170317.jar"/>
+        <pathelement location="C:/Users/sarah/.m2/repository/xalan/serializer/2.7.2/serializer-2.7.2.jar"/>
+        <pathelement location="C:/Users/sarah/.m2/repository/xalan/xalan/2.7.2/xalan-2.7.2.jar"/>
+        <pathelement location="C:/Users/sarah/.m2/repository/xerces/xercesImpl/2.11.0/xercesImpl-2.11.0.jar"/>
+        <pathelement location="C:/Users/sarah/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.0.1/selenium-firefox-driver-3.0.1.jar"/>
+        <pathelement location="C:/Users/sarah/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/2.42.0/selenium-ie-driver-2.42.0.jar"/>
+        <pathelement location="C:/Users/sarah/.m2/repository/net/java/dev/jna/platform/3.4.0/platform-3.4.0.jar"/>
+        <pathelement location="C:/Users/sarah/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/2.42.0/selenium-chrome-driver-2.42.0.jar"/>
+        <pathelement location="C:/Users/sarah/.m2/repository/org/testng/testng/6.9.10/testng-6.9.10.jar"/>
+        <pathelement location="C:/Users/sarah/.m2/repository/com/beust/jcommander/1.48/jcommander-1.48.jar"/>
+        <pathelement location="C:/Users/sarah/.m2/repository/org/beanshell/bsh/2.0b4/bsh-2.0b4.jar"/>
+        <pathelement location="C:/Users/sarah/.m2/repository/xml-apis/xml-apis/1.4.01/xml-apis-1.4.01.jar"/>
+        <pathelement location="C:/Users/sarah/.m2/repository/mysql/mysql-connector-java/5.1.31/mysql-connector-java-5.1.31.jar"/>
+        <pathelement location="C:/Users/sarah/.m2/repository/org/apache/poi/poi/3.10-FINAL/poi-3.10-FINAL.jar"/>
+        <pathelement location="C:/Users/sarah/.m2/repository/org/apache/poi/poi-ooxml/3.10-FINAL/poi-ooxml-3.10-FINAL.jar"/>
+        <pathelement location="C:/Users/sarah/.m2/repository/org/apache/poi/poi-ooxml-schemas/3.10-FINAL/poi-ooxml-schemas-3.10-FINAL.jar"/>
+        <pathelement location="C:/Users/sarah/.m2/repository/org/apache/xmlbeans/xmlbeans/2.3.0/xmlbeans-2.3.0.jar"/>
+        <pathelement location="C:/Users/sarah/.m2/repository/stax/stax-api/1.0.1/stax-api-1.0.1.jar"/>
+        <pathelement location="C:/Users/sarah/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar"/>
+        <pathelement location="C:/Users/sarah/.m2/repository/org/axsl/org/w3c/dom/svg/svg-dom-java/1.1/svg-dom-java-1.1.jar"/>
+        <pathelement location="C:/Users/sarah/.m2/repository/org/axsl/org/w3c/dom/smil/smil-boston-dom-java/2000-02-25/smil-boston-dom-java-2000-02-25.jar"/>
+        <pathelement location="C:/Users/sarah/.m2/repository/log4j/log4j/1.2.14/log4j-1.2.14.jar"/>
+        <pathelement location="C:/Users/sarah/.m2/repository/com/relevantcodes/extentreports/2.40.2/extentreports-2.40.2.jar"/>
+        <pathelement location="C:/Users/sarah/.m2/repository/org/jsoup/jsoup/1.8.3/jsoup-1.8.3.jar"/>
+        <pathelement location="C:/Users/sarah/.m2/repository/org/xerial/sqlite-jdbc/3.8.11.1/sqlite-jdbc-3.8.11.1.jar"/>
+        <pathelement location="C:/Users/sarah/.m2/repository/org/freemarker/freemarker/2.3.23/freemarker-2.3.23.jar"/>
+    </path>
+    <path id="Day1.classpath">
+        <pathelement location="target/classes"/>
+        <pathelement location="target/test-classes"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <path id="run.Arraylist (1).classpath">
+        <path refid="Day1.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <path id="run.Arraylist.classpath">
+        <path refid="Day1.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <path id="run.closevsquit.classpath">
+        <path refid="Day1.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <path id="run.CopyOfEmiCalDay1.classpath">
+        <path refid="Day1.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <path id="run.CopyOfEmiCalDay2.classpath">
+        <path refid="Day1.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <path id="run.CSS_absolutepath.classpath">
+        <path refid="Day1.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <path id="run.datatypes.classpath">
+        <path refid="Day1.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <path id="run.Day5.classpath">
+        <path refid="Day1.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <path id="run.Driver.classpath">
+        <path refid="Day1.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <path id="run.Dropdown.classpath">
+        <path refid="Day1.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <path id="run.dropdownpractice.classpath">
+        <path refid="Day1.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <path id="run.emicalc_Relative.classpath">
+        <path refid="Day1.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <path id="run.EmiCalDay1.classpath">
+        <path refid="Day1.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <path id="run.Emiverification.classpath">
+        <path refid="Day1.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <path id="run.HtmalOrg.classpath">
+        <path refid="Day1.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <path id="run.Htmltable.classpath">
+        <path refid="Day1.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <path id="run.Linkedlist.classpath">
+        <path refid="Day1.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <path id="run.Multiplewindows.classpath">
+        <path refid="Day1.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <path id="run.nestedloop.classpath">
+        <path refid="Day1.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <path id="run.propfram.classpath">
+        <path refid="Day1.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <path id="run.searchDriver.classpath">
+        <path refid="Day1.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <path id="run.Temrature.classpath">
+        <path refid="Day1.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <path id="run.yahoosearch (1).classpath">
+        <path refid="Day1.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <path id="run.yahoosearch.classpath">
+        <path refid="Day1.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <path id="run.actionss.classpath">
+        <path refid="Day1.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <path id="run.javaexecuter.classpath">
+        <path refid="Day1.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <path id="run.Drivercal.classpath">
+        <path refid="Day1.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <target name="init">
+        <mkdir dir="target/classes"/>
+        <mkdir dir="target/test-classes"/>
+        <copy includeemptydirs="false" todir="target/classes">
+            <fileset dir="src/main/java">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="target/classes">
+            <fileset dir="src/main/resources">
+                <exclude name="**/*.java"/>
+                <exclude name="**"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="target/test-classes">
+            <fileset dir="src/test/java">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="target/test-classes">
+            <fileset dir="src/test/resources">
+                <exclude name="**/*.java"/>
+                <exclude name="**"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="target/classes"/>
+        <delete dir="target/test-classes"/>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="target/classes" includeantruntime="false" source="${source}" target="${target}">
+            <src path="src/main/java"/>
+            <src path="src/main/resources"/>
+            <exclude name="**"/>
+            <classpath refid="Day1.classpath"/>
+        </javac>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="target/test-classes" includeantruntime="false" source="${source}" target="${target}">
+            <src path="src/test/java"/>
+            <src path="src/test/resources"/>
+            <exclude name="**"/>
+            <classpath refid="Day1.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
+        <copy todir="${ant.library.dir}">
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </copy>
+        <unzip dest="${ant.library.dir}">
+            <patternset includes="jdtCompilerAdapter.jar"/>
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </unzip>
+    </target>
+    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+        <antcall target="build"/>
+    </target>
+    <target name="Arraylist (1)">
+        <java classname="Day5.Arraylist" failonerror="true" fork="yes">
+            <classpath refid="run.Arraylist (1).classpath"/>
+        </java>
+    </target>
+    <target name="Arraylist">
+        <java classname="mayClass.Arraylist" failonerror="true" fork="yes">
+            <classpath refid="run.Arraylist.classpath"/>
+        </java>
+    </target>
+    <target name="closevsquit">
+        <java classname="Day28th.closevsquit" failonerror="true" fork="yes">
+            <classpath refid="run.closevsquit.classpath"/>
+        </java>
+    </target>
+    <target name="CopyOfEmiCalDay1">
+        <java classname="Day1.CopyOfEmiCalDay1" failonerror="true" fork="yes">
+            <classpath refid="run.CopyOfEmiCalDay1.classpath"/>
+        </java>
+    </target>
+    <target name="CopyOfEmiCalDay2">
+        <java classname="Day1.CopyOfEmiCalDay2" failonerror="true" fork="yes">
+            <classpath refid="run.CopyOfEmiCalDay2.classpath"/>
+        </java>
+    </target>
+    <target name="CSS_absolutepath">
+        <java classname="Day28th.CSS_absolutepath" failonerror="true" fork="yes">
+            <classpath refid="run.CSS_absolutepath.classpath"/>
+        </java>
+    </target>
+    <target name="datatypes">
+        <java classname="Day2_6thMay.datatypes" failonerror="true" fork="yes">
+            <classpath refid="run.datatypes.classpath"/>
+        </java>
+    </target>
+    <target name="Day5">
+        <java classname="mayClass.Day5" failonerror="true" fork="yes">
+            <classpath refid="run.Day5.classpath"/>
+        </java>
+    </target>
+    <target name="Driver">
+        <java classname="Calc_29th.Driver" failonerror="true" fork="yes">
+            <classpath refid="run.Driver.classpath"/>
+        </java>
+    </target>
+    <target name="Dropdown">
+        <java classname="Calc_29th.Dropdown" failonerror="true" fork="yes">
+            <classpath refid="run.Dropdown.classpath"/>
+        </java>
+    </target>
+    <target name="dropdownpractice">
+        <java classname="Calc_29th.dropdownpractice" failonerror="true" fork="yes">
+            <classpath refid="run.dropdownpractice.classpath"/>
+        </java>
+    </target>
+    <target name="emicalc_Relative">
+        <java classname="Day1.emicalc_Relative" failonerror="true" fork="yes">
+            <classpath refid="run.emicalc_Relative.classpath"/>
+        </java>
+    </target>
+    <target name="EmiCalDay1">
+        <java classname="Day1.EmiCalDay1" failonerror="true" fork="yes">
+            <classpath refid="run.EmiCalDay1.classpath"/>
+        </java>
+    </target>
+    <target name="Emiverification">
+        <java classname="assinment2.Emiverification" failonerror="true" fork="yes">
+            <classpath refid="run.Emiverification.classpath"/>
+        </java>
+    </target>
+    <target name="HtmalOrg">
+        <java classname="Day4_normal.HtmalOrg" failonerror="true" fork="yes">
+            <classpath refid="run.HtmalOrg.classpath"/>
+        </java>
+    </target>
+    <target name="Htmltable">
+        <java classname="Day4_normal.Htmltable" failonerror="true" fork="yes">
+            <classpath refid="run.Htmltable.classpath"/>
+        </java>
+    </target>
+    <target name="Linkedlist">
+        <java classname="mayClass.Linkedlist" failonerror="true" fork="yes">
+            <classpath refid="run.Linkedlist.classpath"/>
+        </java>
+    </target>
+    <target name="Multiplewindows">
+        <java classname="Day5.Multiplewindows" failonerror="true" fork="yes">
+            <classpath refid="run.Multiplewindows.classpath"/>
+        </java>
+    </target>
+    <target name="nestedloop">
+        <java classname="Calc_29th.nestedloop" failonerror="true" fork="yes">
+            <classpath refid="run.nestedloop.classpath"/>
+        </java>
+    </target>
+    <target name="propfram">
+        <java classname="propfram" failonerror="true" fork="yes">
+            <classpath refid="run.propfram.classpath"/>
+        </java>
+    </target>
+    <target name="searchDriver">
+        <java classname="Day29th.searchDriver" failonerror="true" fork="yes">
+            <classpath refid="run.searchDriver.classpath"/>
+        </java>
+    </target>
+    <target name="Temrature">
+        <java classname="assignment.Temrature" failonerror="true" fork="yes">
+            <classpath refid="run.Temrature.classpath"/>
+        </java>
+    </target>
+    <target name="yahoosearch (1)">
+        <java classname="assinment2.yahoosearch" failonerror="true" fork="yes">
+            <classpath refid="run.yahoosearch (1).classpath"/>
+        </java>
+    </target>
+    <target name="yahoosearch">
+        <java classname="Day28th.yahoosearch" failonerror="true" fork="yes">
+            <classpath refid="run.yahoosearch.classpath"/>
+        </java>
+    </target>
+    <target name="actionss">
+        <java classname="actionss" failonerror="true" fork="yes">
+            <classpath refid="run.actionss.classpath"/>
+        </java>
+    </target>
+    <target name="javaexecuter">
+        <java classname="javaexecuter" failonerror="true" fork="yes">
+            <classpath refid="run.javaexecuter.classpath"/>
+        </java>
+    </target>
+    <target name="Drivercal">
+        <java classname="Drivercal" failonerror="true" fork="yes">
+            <classpath refid="run.Drivercal.classpath"/>
+        </java>
+    </target>
+</project>

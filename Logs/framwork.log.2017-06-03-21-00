@@ -1,0 +1,9 @@
+[INFO] 2017-06-03 21:00:40,954 assignment.Linearscrip operation - Test Started
+[INFO] 2017-06-03 21:00:40,980 assignment.Linearscrip operation - expected value is-: 500.0
+[INFO] 2017-06-03 21:00:41,519 assignment.Linearscrip operation - Actual value is-:null
+[INFO] 2017-06-03 21:00:50,841 assignment.Linearscrip operation - Test Started
+[INFO] 2017-06-03 21:00:50,841 assignment.Linearscrip operation - expected value is-: 500.0
+[INFO] 2017-06-03 21:00:51,179 assignment.Linearscrip operation - Actual value is-:null
+[INFO] 2017-06-03 21:00:58,607 assignment.Linearscrip operation - Test Started
+[INFO] 2017-06-03 21:00:58,608 assignment.Linearscrip operation - expected value is-: 500.0
+[INFO] 2017-06-03 21:00:58,934 assignment.Linearscrip operation - Actual value is-:null
