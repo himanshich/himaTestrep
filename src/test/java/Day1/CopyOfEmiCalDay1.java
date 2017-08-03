@@ -16,6 +16,7 @@ public class CopyOfEmiCalDay1 {
 		
 		WebDriver Driver = new FirefoxDriver();
 		Driver.get("http://www.google.com");
+		System.out.println("GitHub Testing!!");
 	}
 
 }
